@@ -1145,7 +1145,7 @@
 				)
 			)
 		)
-		(symbol "ZXINFO_LIB:Connector ZX81"
+		(symbol "ZXINFO_SYMBOL:Connector ZX81"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2021,7 +2021,7 @@
 				)
 			)
 		)
-		(symbol "ZXINFO_LIB:W27C512"
+		(symbol "ZXINFO_SYMBOL:W27C512"
 			(pin_names
 				(offset 1.016)
 			)
@@ -4698,7 +4698,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZXINFO_LIB:W27C512")
+		(lib_id "ZXINFO_SYMBOL:W27C512")
 		(at 149.86 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6035,7 +6035,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZXINFO_LIB:Connector ZX81")
+		(lib_id "ZXINFO_SYMBOL:Connector ZX81")
 		(at 40.64 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6059,7 +6059,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ZXINFO:EDGE ZX81_1"
+		(property "Footprint" "ZXINFO_FOOTPRINT:EDGE ZX81 BOTTOM"
 			(at 40.64 62.23 0)
 			(effects
 				(font
@@ -6074,7 +6074,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
