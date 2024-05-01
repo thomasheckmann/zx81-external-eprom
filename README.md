@@ -10,7 +10,7 @@ BOM for v1:
 - [ ] 74LS138
 - [ ] 3 x 10K Resistors
 - [ ] BC549 Transistor
-- [ ] 2 x 100nF ceramic capacitor
+- [ ] 2 x 100nF ceramic capacitor, 2,5mm
 - [ ] DIP Switch 3 x ON-OFF
 - [ ] Sockets for IC, Edge Connector (RM 2,54)
 
