@@ -20,3 +20,4 @@ BOM for v1:
 The silkscreen says 4K7 for the resistors, but with the WINBOND they can all be changed to 10K (as in this picture). The DIP switches from left to right are, A13, A14, A15 - but should really be the other way around, to match the binary pattern and bank nunber in EEPROM.
 
 # version 2
+Coming soon...
