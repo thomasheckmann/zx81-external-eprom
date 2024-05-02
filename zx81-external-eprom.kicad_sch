@@ -2924,6 +2924,12 @@
 		(uuid "0ab57981-4972-4031-9c78-b1e181e2ccd7")
 	)
 	(junction
+		(at 128.27 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1825bdad-53e1-4872-809c-496de6d8bfa7")
+	)
+	(junction
 		(at 90.17 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2966,12 +2972,6 @@
 		(uuid "add21a3b-1c8a-40c4-934b-4408eab2e979")
 	)
 	(junction
-		(at 133.35 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cad048ca-6e57-435b-b333-4b91cf91e873")
-	)
-	(junction
 		(at 128.27 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2984,16 +2984,16 @@
 		(uuid "d038caba-a80b-4ec6-a02d-b38aa58cb7ca")
 	)
 	(junction
-		(at 128.27 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d630be50-de18-4ddc-8abf-686d5561bfec")
-	)
-	(junction
 		(at 149.86 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e56c3f68-b8bf-4ff4-b3c5-870bcf8fb71d")
+	)
+	(junction
+		(at 133.35 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e57224be-1915-4d54-b05e-293f83faf675")
 	)
 	(junction
 		(at 85.09 124.46)
@@ -3113,6 +3113,26 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 143.51) (xy 128.27 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2260c7c9-f103-4c3b-b89f-a26c5d31a96f")
+	)
+	(wire
+		(pts
+			(xy 111.76 138.43) (xy 133.35 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23309607-66b4-4d53-a3e4-09011c76906d")
+	)
+	(wire
+		(pts
 			(xy 69.85 46.99) (xy 77.47 46.99)
 		)
 		(stroke
@@ -3143,23 +3163,23 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 138.43) (xy 128.27 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b794c72-5e9c-4fbc-8c97-4f9a8ff16986")
-	)
-	(wire
-		(pts
-			(xy 128.27 104.14) (xy 128.27 138.43)
+			(xy 128.27 104.14) (xy 128.27 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2c2a9900-d97b-4216-9c13-0bb8e34e5ff6")
+	)
+	(wire
+		(pts
+			(xy 111.76 143.51) (xy 128.27 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d615001-b1cb-4e2c-becd-4e643a82d091")
 	)
 	(wire
 		(pts
@@ -3170,16 +3190,6 @@
 			(type default)
 		)
 		(uuid "3427a6de-7273-4cef-b2ed-e7072de880b5")
-	)
-	(wire
-		(pts
-			(xy 133.35 143.51) (xy 133.35 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36e96b3e-dc05-4464-b30d-562762203350")
 	)
 	(wire
 		(pts
@@ -3273,7 +3283,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 109.22) (xy 133.35 143.51)
+			(xy 133.35 109.22) (xy 133.35 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3300,16 +3310,6 @@
 			(type default)
 		)
 		(uuid "75981463-fcb7-4c99-8fc1-de87ecc9cf63")
-	)
-	(wire
-		(pts
-			(xy 111.76 143.51) (xy 133.35 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78e9dd22-a48d-4c08-b176-4510480bd3bd")
 	)
 	(wire
 		(pts
@@ -3383,16 +3383,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 138.43) (xy 128.27 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91681853-d714-42c4-8765-df34fb6f26e0")
-	)
-	(wire
-		(pts
 			(xy 40.64 116.84) (xy 81.28 116.84)
 		)
 		(stroke
@@ -3410,6 +3400,16 @@
 			(type default)
 		)
 		(uuid "92d5b340-913f-4785-878e-e406451787bc")
+	)
+	(wire
+		(pts
+			(xy 133.35 138.43) (xy 133.35 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "942e64f6-6f4a-4bb6-930a-96060470f90d")
 	)
 	(wire
 		(pts
@@ -3640,6 +3640,25 @@
 			(type default)
 		)
 		(uuid "fc437529-627e-4ac7-b305-41ea2335c0f1")
+	)
+	(text_box "ZX81 external multi ROM interface\n\n- Re-wire, A15 -> 1-6, A13 -> 3-4\n	(position DIP correct)\n- Change R from 4K7 to 10K"
+		(exclude_from_sim no)
+		(at 195.58 15.24 0)
+		(size 86.36 31.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "9dadcd48-54ba-4d2b-9e2d-a58e45cd3b3c")
 	)
 	(global_label "A14"
 		(shape input)
@@ -5398,7 +5417,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4K7"
+		(property "Value" "10K"
 			(at 128.27 154.178 90)
 			(effects
 				(font
@@ -5533,7 +5552,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4K7"
+		(property "Value" "10K"
 			(at 133.35 154.178 90)
 			(effects
 				(font
@@ -6324,7 +6343,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4K7"
+		(property "Value" "10K"
 			(at 130.81 154.178 90)
 			(effects
 				(font
