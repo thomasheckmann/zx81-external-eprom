@@ -19,6 +19,8 @@ BOM for v1:
 - [ ] DIP Switch 3 x ON-OFF
 - [ ] Sockets for IC, Edge Connector (RM 2,54)
 
+The PCB can be fitted with a standard Edge Connector for ZX81, or it can be used as a plug-in card in the [Bus Extender](https://github.com/thomasheckmann/zx81-bus-extender)
+
 ![IMG_0138](https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/8602e070-fe87-4aac-869a-331a85886e2d)
 
 ## Planned changes / improvement for v2
