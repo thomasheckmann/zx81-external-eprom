@@ -1,5 +1,5 @@
 # zx81-external-eprom
-The main goal for this project is make it possible to run one of the improved version of the ZX81 ROM, without the need to opening up for ZX81 and replacing the original ROM. I decided to use the W27C512 EEPROM, which makes it possible to store 8 x 8kb ROM - and made them selectable using the dip switches.
+The primary aim of this project is to enable the use of an upgraded version of the ZX81 ROM without requiring the ZX81 to be opened up for ROM replacement. I decided upon the W27C512 EEPROM, allowing storage of 8 x 8kb ROMs, each selectable via dip switches.
 
 # the prototype
 It all started with a breadboard and a lot of wires! It is chaos, yes, but it turned out to work as intended. With this PoC it is possible to run a ZX81 with a custom ROM externally, without the need to open and replace the original ROM chip. It does however stil needs the original ROM inside the ZX81, but mainly because of the way the display system works on the ZX81 - it's clever, but at the same time a main challenge these days.
