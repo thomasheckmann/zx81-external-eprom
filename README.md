@@ -39,8 +39,11 @@ A version with the changes mentioned above was produced, it worked out OK - but 
 Getting close to the final version of external ROM switcher for support for 8KiB or 16KiB banks. Changes from 1.1 to the board:
 - Making PADS 2mm longer, to prevent potential issues with some connectors (when used in the Expander board)
 - Changed from pull-ups to pull-downs, to match actual behaviour of DIP-SWITCH (up = 1/ON/HIGH, down = 0/OFF/LOW)
- 
-[IMAGES]
+
+| SCHEMA | PCB |
+| ------ | --- |
+|<img width="410" src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/9e6f7f84-8e71-46af-84df-7289f5c6422e">|<img width="410" src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/4db67072-9141-4cce-8b51-c57d8c995c3d">|
+
 ## Instructions on how to use
 
 - DIP-4 (right) - sets the mode of operation, DOWN = use 8KiB banks, UP = use 16KiB banks
