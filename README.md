@@ -6,11 +6,11 @@ It all started with a breadboard and a lot of wires! It is chaos, yes, but it tu
 
 ![437778001_10220643056586831_7843453154083253458_n](https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/87253a16-ab56-491b-8140-caf4ac7e76ad)
 
-# version 1
+# version 1.0
 Basic version, requires the original ROM in the ZX81 - because of the way the display system works.
 KiCad 8 files available as well as Gerber files for PCB production.
 
-BOM for v1:
+BOM for v1.0:
 - [ ] WINBOND W27C512 EEPROM
 - [ ] 74LS138
 - [ ] 3 x 10K Resistors
@@ -23,11 +23,48 @@ The PCB can be fitted with a standard Edge Connector for ZX81, or it can be used
 
 ![IMG_0138](https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/8602e070-fe87-4aac-869a-331a85886e2d)
 
-## Planned changes / improvement for v2
+## Planned changes / improvement for v1.1
 - The silkscreen says 4K7 for the resistors, but with the WINBOND they can all be changed to 10K (as in this picture).
 - The DIP switches from left to right are, A13, A14, A15 - but should really be the other way around, to match the binary pattern and bank number in EEPROM.
 - Support for 16kb ROM, needed to run SPonZY (ZX Spectrum ROM modified to run on ZX81 Hardware).
 - Rotate the ICs 180 degree, just to make the text in the right direction (I know - it's not important, but...)
 
-# version 2
-Coming soon...
+# version 1.1
+A version with the changes mentioned above was produced, it worked out OK - but as I already had a few other changes in mind, it was never released as such. But for the curious minds, here are some pictures of how it looked like - and as can be seen, it runs the SPonZY ROM quite well :-)
+
+<img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/908d6fa9-f1c4-43f9-9e35-517dcd03677c" width="410"><img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/ab6eb709-44dd-485b-a4fe-c9816a48fb98" width="410">
+<img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/70efa672-26ee-4a6d-a4da-e9d09e4df717" width="410"><img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/d2cbfafc-f462-485c-9fe3-703eca0f0ae9" width="410">
+
+# version 1.2
+Getting close to the final version of external ROM switcher for support for 8KiB or 16KiB banks. Changes from 1.1 to the board:
+- Making PADS 2mm longer, to prevent potential issues with some connectors (when used in the Expander board)
+- Changed from pull-ups to pull-downs, to match actual behaviour of DIP-SWITCH (up = 1/ON/HIGH, down = 0/OFF/LOW)
+ 
+[IMAGES]
+## Instructions on how to use
+
+- DIP-4 (right) - sets the mode of operation, DOWN = use 8KiB banks, UP = use 16KiB banks
+- DIP-1 to 3, selects which banks is used as ROM - in case of 16KiB banking, DIP-3 (A13) is ignored.
+
+## How to create image for EEPROM
+The W27C512 EEPROM can contain 8x 8KiB or 4 x 16KiB images - selectable with the switch, forming the binary number 0-3 or 0-7 for the active bank.
+
+For Windows
+```
+COPY /B ROM_0+ROM_1+ROM_2+ROM_3 IMAGE.BIN
+```
+
+For Unix/Mac
+```
+cat ROM_0 ROM_1 ROM_2 ROM_3 >IMAGE.BIN
+```
+
+Use your favorite (E)EPROM programmer to transfer the IMAGE.BIN to the EEPROM
+```
+LEFT|RIGHT
+OFF | OFF - 0: ROM_0
+OFF | ON  - 1: ROM_1
+ON  | OFF - 2: ROM_2
+ON  | ON  - 3: ROM_3
+```
+
