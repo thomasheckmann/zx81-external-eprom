@@ -84,4 +84,18 @@ Unix/MacOS
 cat ZX81v2_mod.rom StoreDemo.rom >SD.rom
 cat SD.rom SD.rom SD.rom SD.rom > SDx4.rom
 ````
-Resulting SD.rom shoulb be a 16K rom image and SDx4.rom should be 65K, ready to be programmed in W27C512.
+Resulting SD.rom shoulb be a 16K rom image and SDx4.rom should be 65K (contains SD.rom in all 4 banks), ready to be programmed in W27C512.
+
+## Memotech MemoCalc
+This is a 4K rom that resides in the upper 4K of the mirror area. Layout of a 16K rom containing this, should be:
+- 0-8K, 8K ROM - ZX81 rom, use v2 - 649 (MD5: db398d4e4e93a6d4dee3bfe146918219)
+- 8-12K, copy of first 4K of the ZX81 ROM
+- 12-16, the [MemoCalc Rom](https://www.zx81stuff.org.uk/zx81/hardware/Memocalc)
+
+Unix/MacOS
+````
+split -b 4k ZX81v2.rom ZX81
+cat ZX81v2.rom ZX81aa Memocalc.rom >MC.rom
+cat MC.rom MC.rom MC.rom MC.rom > MCx4.rom
+````
+MemoCalc is started with RAND USR 13824
