@@ -1,4 +1,4 @@
-# zx81-external-eprom
+# ZX81 external eprom
 The primary aim of this project is to enable the use of an upgraded version of the ZX81 ROM without requiring the ZX81 to be opened up for ROM replacement. I decided upon the W27C512 EEPROM, allowing storage of 8 x 8kb ROMs, each selectable via dip switches.
 
 # the prototype
@@ -43,6 +43,9 @@ Getting close to the final version of external ROM switcher for support for 8KiB
 | SCHEMA | PCB |
 | ------ | --- |
 |<img width="410" src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/9e6f7f84-8e71-46af-84df-7289f5c6422e">|<img width="410" src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/4db67072-9141-4cce-8b51-c57d8c995c3d">|
+
+BOM change:
+- [ ] DIP Switch 4 x ON-OFF
 
 ## Instructions on how to use
 
