@@ -66,13 +66,26 @@ cat ROM_0 ROM_1 ROM_2 ROM_3 >IMAGE.BIN
 ```
 
 Use your favorite (E)EPROM programmer to transfer the IMAGE.BIN to the EEPROM
-```
-LEFT|RIGHT
-OFF | OFF - 0: ROM_0
-OFF | ON  - 1: ROM_1
-ON  | OFF - 2: ROM_2
-ON  | ON  - 3: ROM_3
-```
+
+8K roms - DIP4: OFF/DOWN
+A15|A14|A13|ROM
+---|---|---|---
+OFF | OFF | OFF | 0: ROM_0
+OFF | OFF | ON  | 1: ROM_1
+OFF | ON  | OFF | 2: ROM_2
+OFF | ON  | ON  | 3: ROM_3
+ON  | OFF | OFF | 4: ROM_4
+ON  | OFF | ON  | 5: ROM_5
+ON  | ON  | OFF | 6: ROM_6
+ON  | ON  | ON  | 7: ROM_7
+
+16K roms - DIP4: ON/UP
+A15|A14|A13|ROM
+---|---|---|---
+OFF | OFF | - | 0: ROM_0
+OFF | ON  | - | 1: ROM_1
+ON  | OFF | - | 2: ROM_2
+ON  | ON  | - | 3: ROM_3
 
 # SPECIAL ROMs
 A few ROMs from different interfaces does not sit in the 0-8K memory space, using the 16K configuration of this interface - it is possible to get them running on your ZX81. The following sections provides instruction on how to run the ones I know of.
