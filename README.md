@@ -84,7 +84,8 @@ Unix/MacOS
 cat ZX81v2_mod.rom StoreDemo.rom >SD.rom
 cat SD.rom SD.rom SD.rom SD.rom > SDx4.rom
 ````
-Resulting SD.rom shoulb be a 16K rom image and SDx4.rom should be 65K (contains SD.rom in all 4 banks), ready to be programmed in W27C512.
+Resulting SD.rom shoulb be a 16K rom image and SDx4.rom should be 64K (contains SD.rom in all 4 banks), ready to be programmed in W27C512.
+To start the demo program, run type RUN
 
 ## Memotech MemoCalc
 This is a 4K rom that resides in the upper 4K of the mirror area. Layout of a 16K rom containing this, should be:
@@ -98,4 +99,20 @@ split -b 4k ZX81v2.rom ZX81
 cat ZX81v2.rom ZX81aa Memocalc.rom >MC.rom
 cat MC.rom MC.rom MC.rom MC.rom > MCx4.rom
 ````
+Resulting MC.rom is the 16K image and MCx4.rom should be 64K (contains MC.rom in all 4 banks).
+
 MemoCalc is started with RAND USR 13824
+
+## TS 1510 Command Cartridge Player
+A ROM Catridge interface for the TS1000/1500 - only 4 cartidges was produced, 3 8K and 1 16K
+
+To use the 8K Catridge - the layout of the 16K rom should be:
+- 0-8K, 8K ROM - ZX81, use v2 - 649 (MD5: db398d4e4e93a6d4dee3bfe146918219) (or the TS1500 rom, not tested yet)
+- 8-16K, the Catridge ROM
+
+Unix/MacOS
+````
+cat ZX81v2.rom chess.rom > TS1510_CHESS.rom
+cat TS1510_CHESS.rom TS1510_CHESS.rom TS1510_CHESS.rom TS1510_CHESS.rom > TS1510_CHESSx4.rom
+````
+When ZX81 has booted up, start the game with RAND USR 8192
