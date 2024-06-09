@@ -72,6 +72,8 @@ ON  | ON  - 3: ROM_3
 ```
 
 # SPECIAL ROMs
+A few ROMs from different interfaces does not sit in the 0-8K memory space, using the 16K configuration of this interface - it is possible to get them running on your ZX81. The following sections provides instruction on how to run the ones I know of.
+
 ## Timex Store Demonstrator ROM
 To run the [ROM](http://zx81.ordi5.free.fr/CartesZx81/Timex/StoreDemonstrator/) from the Timex Store Demonstrator Board, the setup needs to be like this:
 - 0-8K, 8K ROM - ZX81 rom, use v2 - 649 (MD5: db398d4e4e93a6d4dee3bfe146918219)
