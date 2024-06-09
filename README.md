@@ -87,7 +87,10 @@ OFF | ON  | - | 1: ROM_1
 ON  | OFF | - | 2: ROM_2
 ON  | ON  | - | 3: ROM_3
 
-# SPECIAL ROMs
+# 16K ROM - what? why?
+Only one known 16K rom exists, it's the SPonZY [SPeccy ON Zeddy](https://www.sinclairzxworld.com/viewtopic.php?t=465) ROM which turns your ZX81 into a ZX Spectrum (without color and sound of course). Just put the ROM file on the EPROM, set DIP 4 to ON/UP and power up your ZX81.
+
+## SPECIAL ROMs
 A few ROMs from different interfaces does not sit in the 0-8K memory space, using the 16K configuration of this interface - it is possible to get them running on your ZX81. The following sections provides instruction on how to run the ones I know of.
 
 ## Timex Store Demonstrator ROM
