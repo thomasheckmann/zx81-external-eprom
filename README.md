@@ -96,7 +96,7 @@ A few ROMs from different interfaces does not sit in the 0-8K memory space, usin
 ## Timex Store Demonstrator ROM
 To run the [ROM](http://zx81.ordi5.free.fr/CartesZx81/Timex/StoreDemonstrator/) from the Timex Store Demonstrator Board, the setup needs to be like this:
 - 0-8K, 8K ROM - ZX81 rom, use v2 - 649 (MD5: db398d4e4e93a6d4dee3bfe146918219)
-- 8-18K, 8K DemoStore ROM
+- 8-16K, 8K DemoStore ROM
 
 Modify ZX81 rom - Change byte offset 0x09DB from 0x40 to 0x20 (ZX81v2_mod.rom)
 
@@ -135,5 +135,19 @@ Unix/MacOS
 ````
 cat ZX81v2.rom chess.rom > TS1510_CHESS.rom
 cat TS1510_CHESS.rom TS1510_CHESS.rom TS1510_CHESS.rom TS1510_CHESS.rom > TS1510_CHESSx4.rom
+````
+When ZX81 has booted up, start the game with RAND USR 8192. If using the TS1500 ROM - the cartridge will autostart, as the TS1500 ROM has been changed a bit to handle this.
+
+## ASDIS
+[ASDIS](https://www.zx81.de/soft/asdis_bs.htm) - Assembler/Disassembler - 8K ROM [ASDIS.C](https://www.zx81.de/soft/swd_asdi.htm)
+
+Layout:
+- 0-8K, 8K ROM - ZX81 rom, use v2 - 649 (MD5: db398d4e4e93a6d4dee3bfe146918219)
+- 8-16K, ASDIS.C Rom image
+
+Unix/MacOS
+````
+cat ZX81v2.rom ASDIS.C > ASDIS.rom
+cat  ASDIS.rom ASDIS.rom ASDIS.rom ASDIS.rom >  ASDISx4.rom
 ````
 When ZX81 has booted up, start the game with RAND USR 8192
