@@ -148,6 +148,6 @@ Layout:
 Unix/MacOS
 ````
 cat ZX81v2.rom ASDIS.C > ASDIS.rom
-cat  ASDIS.rom ASDIS.rom ASDIS.rom ASDIS.rom >  ASDISx4.rom
+cat ASDIS.rom ASDIS.rom ASDIS.rom ASDIS.rom >  ASDISx4.rom
 ````
 When ZX81 has booted up, start the game with RAND USR 8192
