@@ -44,6 +44,8 @@ Getting close to the final version of external ROM switcher for support for 8KiB
 | ------ | --- |
 |<img width="410" src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/9e6f7f84-8e71-46af-84df-7289f5c6422e">|<img width="410" src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/4db67072-9141-4cce-8b51-c57d8c995c3d">|
 
+![IMG_1217](https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/9e8341b6-804b-47c0-8407-4380f3a6e58d)
+
 BOM change:
 - [ ] DIP Switch 4 x ON-OFF
 
