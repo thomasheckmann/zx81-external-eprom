@@ -32,8 +32,8 @@ The PCB can be fitted with a standard Edge Connector for ZX81, or it can be used
 # version 1.1
 A version with the changes mentioned above was produced, it worked out OK - but as I already had a few other changes in mind, it was never released as such. But for the curious minds, here are some pictures of how it looked like - and as can be seen, it runs the SPonZY ROM quite well :-)
 
-<img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/908d6fa9-f1c4-43f9-9e35-517dcd03677c" width="410"><img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/ab6eb709-44dd-485b-a4fe-c9816a48fb98" width="410">
-<img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/70efa672-26ee-4a6d-a4da-e9d09e4df717" width="410"><img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/d2cbfafc-f462-485c-9fe3-703eca0f0ae9" width="410">
+<img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/908d6fa9-f1c4-43f9-9e35-517dcd03677c" width="410"><img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/ab6eb709-44dd-485b-a4fe-c9816a48fb98" width="500" height="500">
+<img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/70efa672-26ee-4a6d-a4da-e9d09e4df717" width="410"><img src="https://github.com/thomasheckmann/zx81-external-eprom/assets/14136378/d2cbfafc-f462-485c-9fe3-703eca0f0ae9" width="500" height="500">
 
 # version 1.2
 Getting close to the final version of external ROM switcher for support for 8KiB or 16KiB banks. Changes from 1.1 to the board:
