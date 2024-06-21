@@ -154,4 +154,8 @@ Unix/MacOS
 cat ZX81v2.rom ASDIS.C > ASDIS.rom
 cat ASDIS.rom ASDIS.rom ASDIS.rom ASDIS.rom >  ASDISx4.rom
 ````
-When ZX81 has booted up, start the game with RAND USR 8192
+When ZX81 has booted up, start the assembler/disassembler with RAND USR 8192
+
+## AUTO RUN a (P)tape file
+Yes, it's possible to make a setup which makes the ZX81 able to boot and auto run a tape file.
+More info to come soon!
