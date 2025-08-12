@@ -10533,7 +10533,7 @@ decompress:
 
 ; P file compressed with ZX7
 compressed_p:
-        incbin "flightsimulation.p.zx7"
+        incbin "./Examples_ZX7/flightsimulation.p.zx7"
 
         DEFS    0x4000 - $, 0   ; fill up with 0
 .END
