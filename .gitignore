@@ -34,3 +34,6 @@ fp-info-cache
 .DS_Store
 
 \#auto_saved_files#
+autorun/autorun.lst
+autorun/autorun.rom
+autorun/TESTROM.bin
