@@ -157,5 +157,6 @@ cat ASDIS.rom ASDIS.rom ASDIS.rom ASDIS.rom >  ASDISx4.rom
 When ZX81 has booted up, start the assembler/disassembler with RAND USR 8192
 
 ## AUTO RUN a (P)tape file
-Yes, it's possible to make a setup which makes the ZX81 able to boot and auto run a tape file.
-More info to come soon!
+Yes, it's possible to make a setup which makes the ZX81 able to boot and auto run a tape file. Concept based on work by Wilf Rigter - look in the 'autorun' folder for more details.
+
+OR you can checkout this awesome tool [ZX81 External EPROM Builder](https://github.com/general-ackbar/ZX81-external-eprom-builder), to create the required ROM file to burn into EPROM. The tool supports multiple P files (as long as it fits in 8K) together with a MENU to select program.
